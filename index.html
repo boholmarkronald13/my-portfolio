@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div id="image-popup" class="popup">
+  <span class="close">&times;</span>
+  <img class="popup-content" id="popup-img">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+
+  <header>
+    <div class="logo">MyPortfolio</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+
+  <div class="hero-image">
+    <img src="profile.jpg" alt="Profile Picture">
+  </div>
+
+  <div class="hero-text">
+
+    <h1>
+      Hi, I'm <span>Mark Ronald Bohol</span>
+    </h1>
+
+    <h2>
+      <span class="typing"></span>
+    </h2>
+
+    <p class="hero-description">
+      IT Support Specialist with experience in troubleshooting,
+      technical support, networking basics, and remote assistance.
+      Passionate about solving technical problems and providing
+      efficient support solutions.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#contact" class="btn">
+        Contact Me
+      </a>
+
+      <a href="resume.pdf" download class="btn resume-btn">
+        <i class="fa-solid fa-download"></i>
+        Download Resume
+      </a>
+
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+  </div>
+
+</section>
+   <section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-content">
+      <div class="about-box">
+        <p>
+          I am passionate about technology, web development, and solving technical problems.
+          I have experience in IT support, troubleshooting, and creating responsive websites.
+        </p>
+      </div>
+
+      <div class="about-box">
+        <p>
+          My goal is to continuously improve my skills and build projects that provide real-world solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+ <section id="skills">
+
+  <h2 class="section-title">Technical Skills</h2>
+
+  <div class="skills-container">
+
+    <!-- Skill 1 -->
+    <div class="skill">
+      <div class="skill-info">
+        <span>Technical Support</span>
+        <span>90%</span>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-progress support"></div>
+      </div>
+    </div>
+
+    <!-- Skill 2 -->
+    <div class="skill">
+      <div class="skill-info">
+        <span>Network Troubleshooting</span>
+        <span>75%</span>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-progress network"></div>
+      </div>
+    </div>
+
+    <!-- Skill 3 -->
+    <div class="skill">
+      <div class="skill-info">
+        <span>Remote Desktop Support</span>
+        <span>85%</span>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-progress remote"></div>
+      </div>
+    </div>
+
+    <!-- Skill 4 -->
+    <div class="skill">
+      <div class="skill-info">
+        <span>Hardware Troubleshooting</span>
+        <span>80%</span>
+      </div>
+
+      <div class="skill-bar">
+        <div class="skill-progress hardware"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ <section id="projects">
+
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <a href="https://github.com/yourusername" target="_blank">
+
+      <div class="project-card">
+
+        <img src="Project1.png" alt="IT Support Dashboard" class="popup-img">
+
+        <div class="project-info">
+          <h3>IT Support Dashboard</h3>
+          <p>Ticketing system for IT support and troubleshooting workflow.</p>
+        </div>
+
+      </div>
+
+    </a>
+
+    <!-- PROJECT 2 -->
+    <a href="https://github.com/yourusername" target="_blank">
+
+      <div class="project-card">
+
+        <img src="Project2.jpg" alt="Network Topology" class="popup-img">
+
+        <div class="project-info">
+          <h3>Network Topology Simulation</h3>
+          <p>Simulated LAN and network troubleshooting setup using Cisco Packet Tracer.</p>
+        </div>
+
+      </div>
+
+    </a>
+
+    <!-- PROJECT 3 -->
+    <a href="https://github.com/yourusername" target="_blank">
+
+      <div class="project-card">
+
+        <img src="Project3.jpg" alt="PC Troubleshooting" class="popup-img">
+
+        <div class="project-info">
+          <h3>PC Troubleshooting Guide</h3>
+          <p>A troubleshooting reference for diagnosing hardware and software issues.</p>
+        </div>
+
+      </div>
+
+    </a>
+
+  </div>
+
+</section>
+
+ <section id="contact">
+
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact-container">
+
+    <form class="contact-form">
+
+      <input type="text" placeholder="Your Name" required>
+
+      <input type="email" placeholder="Your Email" required>
+
+      <textarea placeholder="Your Message" rows="6" required></textarea>
+
+      <button type="submit" class="btn">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+
+  if(document.body.classList.contains("light-mode")) {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+});
+
+if(localStorage.getItem("theme") === "light") {
+  document.body.classList.add("light-mode");
+}
+
+  var typed = new Typed(".typing", {
+  strings: [
+  "Remote IT Support",
+  "Help Desk Technician",
+  "Aspiring Network Engineer",
+  "Technical Support Specialist"
+],
+    typeSpeed: 80,
+    backSpeed: 50,
+    loop: true
+  });
+</script>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(
+  ".project-card, .skill, .about-box, .contact-box"
+);
+
+hiddenElements.forEach((el) => observer.observe(el));
+</script>
+
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    if (pageYOffset >= sectionTop - 150) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+</script>
+
+<script>
+const popup = document.getElementById("image-popup");
+const popupImg = document.getElementById("popup-img");
+const closeBtn = document.querySelector(".popup .close");
+
+document.querySelectorAll(".popup-img").forEach(img => {
+  img.addEventListener("click", () => {
+    popup.style.display = "flex";
+    popupImg.src = img.src;
+  });
+});
+
+closeBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+popup.addEventListener("click", (e) => {
+  if (e.target === popup) {
+    popup.style.display = "none";
+  }
+});
+</script>
+
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 60
+    },
+    size: {
+      value: 3
+    },
+    move: {
+      speed: 1
+    },
+    line_linked: {
+      enable: true
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>
